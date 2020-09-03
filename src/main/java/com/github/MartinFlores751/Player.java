@@ -9,7 +9,7 @@ import java.util.Vector;
  * Class representing the player in the game.
  */
 public class Player {
-    private static final int BOARD_LENGTH = Game.BOARD.length - 1;
+    private static final int BOARD_LENGTH = Game.BOARD.size() - 1;
 
     private final Vector<Property> purchasedLocations = new Vector<>();
 
