@@ -3,7 +3,7 @@ package com.github.MartinFlores751.tiles;
 /**
  * Class representing the Property tiles
  */
-public class Property {
+public class Property implements BoardSquare {
     private final String name;
     private final int cost;
 
@@ -24,5 +24,13 @@ public class Property {
      */
     public int getCost() {
         return cost;
+    }
+
+    /**
+     * @return the type that the class is.
+     */
+    @Override
+    public SquareType getType() {
+        return SquareType.PROPERTY;
     }
 }

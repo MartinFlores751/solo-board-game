@@ -3,7 +3,7 @@ package com.github.MartinFlores751.tiles;
 /**
  * Class Representing Penalties of the board game
  */
-public class Penalty {
+public class Penalty implements BoardSquare {
     private final String name;
     private final int cost;
     private final int percent;
@@ -30,6 +30,14 @@ public class Penalty {
      */
     public int getCost() {
         return cost;
+    }
+
+    /**
+     * @return the type that the class is.
+     */
+    @Override
+    public SquareType getType() {
+        return SquareType.PENALTY;
     }
 
     /**
